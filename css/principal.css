@@ -61,6 +61,9 @@ h1{
     font-family: Roboto Extrabold;
     color:#c0262c;
     font-size: 2.5em;
+    border-bottom: #c0262c solid thin;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 h2{
  font-size: 1.75em ;
@@ -108,7 +111,6 @@ hr{
     list-style-image: url(/Multimidia/ossinho.png);
     list-style-position: inside;
     margin: 30px 0;
-    
 }
 #curiosidades dt{
     color: white;
@@ -122,13 +124,57 @@ hr{
     margin-top: -3px;
     margin-bottom:30px;
     padding: 20px 20px 0;
-   
-   
 }
 #curiosidades ol{
-
+    list-style-type:none;
+    white-space: pre;
+    line-height: 0.9em;
+    /* nome da variável*/
+    counter-reset: contador;
 }
-#curiosidades ol li ::before{
-
-
+#curiosidades ol li::before{
+    color: #999;
+    /*incrementar a variável 1*/
+    counter-increment: contador;
+    content: "Questão "counter(contador)" \00bb";
 }
+#curiosidades ul li a {
+    text-decoration: none;
+    color:#c0262c;
+    font-family: Roboto Extrabold;
+    padding: 10px;
+    
+}
+#curiosidades ul li a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+#curiosidades dd p a[target="_blank"] {
+    text-decoration:none;
+    color:#c0262c;
+    font-variant: normal;
+    font-style: normal;
+    font-family: Roboto Extrabold;
+    padding: 10px;
+    display: inline-block;
+}
+#curiosidades dd p a[target="blank"] {
+    text-decoration: none;
+}
+#curiosidades dd p a[href="#topo"] {
+    background: url(/Multimidia/seta-voltar.png) no-repeat left center; 
+    text-decoration: none;
+    color: #c0262c;
+    font-variant: normal;
+    font-style: normal;
+    font-family: Roboto Extrabold;
+    padding: 10px 0 10px 30px;
+}
+#curiosidades dd p a[href="#topo"]:hover {
+    background: url(/Multimidia/seta-voltar-hover.png) no-repeat left center; 
+    text-decoration: none;
+    color: #c0262c;
+    font-variant: normal;
+    font-style: normal;
+    font-family: Roboto Extrabold;
+    padding: 10px 0 10px 30px; }
