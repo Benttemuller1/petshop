@@ -13,7 +13,7 @@
 
 
 
-<body>
+<body id="boletim" >
     <p><a href="index.html" target="self">Home</a></p>
 
 
@@ -26,13 +26,10 @@
     
     <p>Fazendo sua assinatura<br> 
     você receberá mensalmente informações sobre nossos produtos, serviços, eventos e descontos.</p>
-    <form>
-        <p><label for="nome"></label><input type="text"name="nome" placeholder="Digite seu nome"> </p>
-        <form method="get" id="boletim" action="obrigado.html" 
-            <p><label for="nome"></label><input type="text"name="nome" placeholder="Digite seu nome" id="nome"> </p>
-            <p><label for="email">E-mail</label><input type="email" placeholder="Digite seu E-mail" id="email"></p>
-            <input type="submit" value="Enviar">
-            </form>
+    <form method="get" id="boletim" action="obrigado.html">
+        <p><label for="nome">nome:</label><input type="text"name="nome" placeholder="Digite seu nome"id="nome" > </p>
+            <p><label for="email">E-mail:</label><input type="email" name="email" placeholder="Digite seu E-mail" id="email"></p>
+            <input type="submit" value="Enviar">           
     </form>
    
 </main>
