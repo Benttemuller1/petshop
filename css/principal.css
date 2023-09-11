@@ -4,48 +4,135 @@
    Reset dos estilos da página
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-/* ESTILO COMUM A TODAS AS PAGINAS  HTML5 display-role reset for older browsers */ 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+/* ESTILO COMUM A TODAS AS PAGINAS  HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 @font-face {
@@ -54,115 +141,135 @@ table {
     font-family: Roboto Extrabold;
     src: url(/Fontes/RobotoSlab-ExtraBold.ttf);
 }
-body{
-    font-family:Roboto Regular;
+
+body {
+    font-family: Roboto Regular;
 }
-h1{
+
+h1 {
     font-family: Roboto Extrabold;
-    color:#c0262c;
+    color: #c0262c;
     font-size: 2.5em;
     border-bottom: #c0262c solid thin;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-h2{
- font-size: 1.75em ;
+
+h2 {
+    font-size: 1.75em;
 }
+
 p {
-    font-size:  1.1em; ;
-    line-height:1.3em;
+    font-size: 1.1em;
+    ;
+    line-height: 1.3em;
     text-align: justify;
 }
-p::first-line{
+
+p::first-line {
     font-size: 1.17em;
     font-variant: small-caps;
     font-weight: bolder;
     font-style: italic;
 }
-hr{
+
+hr {
     border-color: #c0262c;
 }
+
 /* Trabalhando a página curiosidades*/
-#curiosidades h2{
+#curiosidades h2 {
     background-color: #c0262c;
-    background-image:url(/Multimidia/importante-saber.jpg), url(/Multimidia/back-bolinha.gif);
+    background-image: url(/Multimidia/importante-saber.jpg), url(/Multimidia/back-bolinha.gif);
     background-repeat: no-repeat, repeat;
-    background-position:center right, center center;
-    color:white;
+    background-position: center right, center center;
+    color: white;
     font-size: 2.5em;
     letter-spacing: 0.1em;
     width: 470px;
-    padding: 61px 400px 61px  100px;
+    padding: 61px 400px 61px 100px;
 }
-#curiosidades figcaption{
+
+#curiosidades figcaption {
     background-color: #c0262c;
     padding: 10px 10px;
     color: white;
     font-size: 1.5em;
 }
-#curiosidades figure{
+
+#curiosidades figure {
     border: #c0262c solid thin;
     border-radius: 35px 35px 00;
     padding: 20px 0 0;
     text-align: center;
 }
-#curiosidades ul li{
+
+#curiosidades ul li {
     list-style-type: none;
     list-style-image: url(/Multimidia/ossinho.png);
     list-style-position: inside;
     margin: 30px 0;
 }
-#curiosidades dt{
+
+#curiosidades dt {
     color: white;
     background-color: #c0262c;
     padding: 10px;
     font-family: Roboto Extrabold;
 }
-#curiosidades dd{
-    border:#c0262c thin solid;
+
+#curiosidades dd {
+    border: #c0262c thin solid;
     border-radius: 0 0 25px 25px;
     margin-top: -3px;
-    margin-bottom:30px;
+    margin-bottom: 30px;
     padding: 20px 20px 0;
 }
-#curiosidades ol{
-    list-style-type:none;
+
+#curiosidades ol {
+    list-style-type: none;
     white-space: pre;
     line-height: 0.9em;
     /* nome da variável*/
     counter-reset: contador;
 }
-#curiosidades ol li::before{
+
+#curiosidades ol li::before {
     color: #999;
     /*incrementar a variável 1*/
     counter-increment: contador;
-    content: "Questão "counter(contador)" \00bb";
+    content: "Questão " counter(contador)" \00bb";
 }
+
 #curiosidades ul li a {
     text-decoration: none;
-    color:#c0262c;
+    color: #c0262c;
     font-family: Roboto Extrabold;
     padding: 10px;
-    
+
 }
-#curiosidades ul li a:hover{
+
+#curiosidades ul li a:hover {
     text-decoration: underline;
     color: blue;
 }
+
 #curiosidades dd p a[target="_blank"] {
-    text-decoration:none;
-    color:#c0262c;
+    text-decoration: none;
+    color: #c0262c;
     font-variant: normal;
     font-style: normal;
     font-family: Roboto Extrabold;
     padding: 10px;
     display: inline-block;
 }
+
 #curiosidades dd p a[target="blank"] {
     text-decoration: none;
 }
+
 #curiosidades dd p a[href="#topo"] {
-    background: url(/Multimidia/seta-voltar.png) no-repeat left center; 
+    background: url(/Multimidia/seta-voltar.png) no-repeat left center;
     text-decoration: none;
     color: #c0262c;
     font-variant: normal;
@@ -170,42 +277,132 @@ hr{
     font-family: Roboto Extrabold;
     padding: 10px 0 10px 30px;
 }
+
 #curiosidades dd p a[href="#topo"]:hover {
-    background: url(/Multimidia/seta-voltar-hover.png) no-repeat left center; 
+    background: url(/Multimidia/seta-voltar-hover.png) no-repeat left center;
     text-decoration: none;
     color: #c0262c;
     font-variant: normal;
     font-style: normal;
     font-family: Roboto Extrabold;
-    padding: 10px 0 10px 30px; }
-    /* pagina de produtos*/
-    #produtos table{
-        width: 60px;
-        margin: 50px auto 30px;
-        text-align: center;
-        border-collapse: collapse;
-    }
-    #produtos th,#produtos td{
-        border: #999 solid 1px;
-        padding: 5px;
-    }
-    #produtos caption{
-        background-color: #999;
-        color: white;
-        padding: 15px 0;
-        font-size: 1.5em;
-    }
-    #produtos td[colspan]{
-        font-style: italic;
-        font-weight:bold;
-        color: #999;
-    }
-    #produtos tr:hover{
-background-color: yellow;
+    padding: 10px 0 10px 30px;
+}
+#curiosidades header #anuncio {
+    width: 510px;
+    float: left;
+    margin: 80px auto auto;
+    padding-top: 0px;
+}
 
-    }
+#curiosidades header section {
+    padding-top: 70px;
+}
+
+#curiosidades header section a[href="boletim.html"] {
+    border: solid thin #c0262c;
+    padding: 6px;
+    border-radius: 10px;
+    color: #c0262c;
+    text-decoration: none;
+    font-variant: all-small-caps;
+    font-style: normal;
+    font-size: 1em;
+}
+
+#curiosidades header section p {
+    color: #999;
+    margin: 30px auto 10px;
+    font-style: normal;
+}
+
+#curiosidades header section figure {
+    width: 100%;
+    margin: 0px;
+}
+
+#curiosidades header section figure a {
+    padding: 25px 5px 0 0;
+    border: none;
+}
+
+#curiosidades header section figure a:first-child {
+    padding: 25px 5px 0 0;
+    border: none;
+}
+
+#curiosidades header section figure a:last-child {
+    padding: 25px 0px 0 5px;
+}
+
+#curiosidades nav {
+    background-color: #000;
+    overflow: auto;
+    clear: both;
+    margin-top: 10px;
+    font-family: Roboto Extrabold;   
+}
+#curiosidades nav ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 1px;
+}
+#curiosidades nav ul li{
+    float: left;
+    margin: 0 auto 0 auto;
+    width: 200px;
+    text-align: center;
+      list-style: none;
+}
+#curiosidades nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1,2em;
+    padding: 5px 50px;
+    line-height: 2em;
+  
+}
+#curiosidades nav ul li a:hover {
+    background-color: #c0262c;
+    display: block;
+    text-decoration: none;
+    color: white;
+   
+}
+
+/* pagina de produtos*/
+#produtos table {
+    width: 60px;
+    margin: 50px auto 30px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#produtos th,
+#produtos td {
+    border: #999 solid 1px;
+    padding: 5px;
+}
+
+#produtos caption {
+    background-color: #999;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.5em;
+}
+
+#produtos td[colspan] {
+    font-style: italic;
+    font-weight: bold;
+    color: #999;
+}
+
+#produtos tr:hover {
+    background-color: yellow;
+
+}
+
 /*pagina de boletim*/
-#boletim h2{
+#boletim h2 {
     font-size: 1.75em;
     background: #c0262c url(/Multimidia/back-bolinha.gif) repeat top center;
     color: white;
@@ -213,16 +410,18 @@ background-color: yellow;
     width: 316px;
     font-family: Roboto Extrabold;
 }
+
 /*trabalhando com os formulários*/
-form{
+form {
     background-color: #999;
-    margin:30px 0;
+    margin: 30px 0;
     padding: 20px;
-    border-radius: 0 15px; 
+    border-radius: 0 15px;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     background-color: #c0262c;
-    background: linear-gradient(to bottom,#6b1516 0%,#c0262c 30%,#c0262c 70%,#6b1516 100%);
+    background: linear-gradient(to bottom, #6b1516 0%, #c0262c 30%, #c0262c 70%, #6b1516 100%);
     border: none;
     border-radius: 30px;
     font-size: 1.2em;
@@ -232,35 +431,263 @@ input[type="submit"]{
     text-shadow: white 2px 2px 5px;
     cursor: pointer;
 }
-input#nome, input#email{
+
+input#nome,
+input#email {
     background-color: transparent;
-    border:none;
+    border: none;
     border-bottom: #000 1px solid;
     font-size: 1.2em;
     color: white;
     width: 800px;
 }
-::-webkit-input-placeholder{
-color: white;
-font-style:italic;
-font-size: 0,8em;
-font-family: Roboto Extrabold;
+
+::-webkit-input-placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0, 8em;
+    font-family: Roboto Extrabold;
 }
-:-ms-input-placeholder{
-    color: white;
-font-style:italic;
-font-size: 0,8em;
-font-family: Roboto Extrabold;
+
+:-ms-input-placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0, 8em;
+    font-family: Roboto Extrabold;
 }
-:-moz-placeholder{
-    color: white;
-font-style:italic;
-font-size: 0,8em;
-font-family: Roboto Extrabold;
+
+:-moz-placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 0, 8em;
+    font-family: Roboto Extrabold;
 }
-label{
+
+label {
     display: block;
     margin-top: 7px;
     float: left;
     width: 60px;
+}
+
+/* pagina de formulario banho e tosa*/
+#banhoetosa fieldset {
+    background-color: white;
+    border: none;
+    border-radius: 0 15px;
+    margin-bottom: 20px;
+}
+
+#banhoetosa fieldset p {
+    float: left;
+    margin: 10px 0 10px 0;
+    display: block;
+}
+
+#banhoetosa fieldset legend {
+    background-color: #c0262c;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    padding: 10px;
+    margin-left: -13px;
+}
+
+#banhoetosa fieldset label {
+    display: block;
+    margin-top: 7px;
+    float: left;
+    width: 115px;
+    font-size: 1.2em;
+    font-variant: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Roboto Regular;
+}
+
+#banhoetosa fieldset input[type="text"] {
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #0000;
+    width: 770px;
+}
+
+#banhoetosa fieldset input[type="email"] {
+    border: none;
+    border-bottom: #000 solid 1px;
+    font-size: 1.2em;
+    color: #000;
+    width: 770px;
+}
+
+#banhoetosa fieldset textarea {
+    width: 770px;
+    height: 100px;
+    resize: none;
+    font-size: 1.2em;
+    border: #000 solid 1px;
+}
+
+#banhoetosa fieldset textarea:-moz-placeholder {
+    color: #999;
+}
+
+#banhoetosa fieldset p.labelsimples {
+    float: none !important;
+}
+
+#banhoetosa p::first-line {
+    font-size: 1.2em;
+    font-variant: normal;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Roboto Regular;
+    margin: 10px 0 10px 0;
+}
+
+#banhoetosa main h2 {
+    background: #fef84f url(/Multimidia/postit.jpg)no-repeat top left;
+    color: #000;
+    padding: 35px;
+    width: 207px;
+    height: 115px;
+    font-size: 1.3em;
+    letter-spacing: .07em;
+    font-family: Roboto Extrabold;
+    line-height: 1.2em;
+}
+
+#quemsomos main img {
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: #c0262c thin solid;
+    background-color: white;
+}
+
+/* trabalhando a estrutura do site*/
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1 {
+    width: 240px;
+    float: left;
+    background-image: url(/Multimidia/meu-amigo-cao-petshop-header.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    border: none;
+    font-size: 0;
+    margin-bottom: 0;
+}
+
+header #anuncio {
+    width: 510px;
+    float: left;
+    margin: 80px auto auto;
+    padding-top: 0px;
+}
+
+header section {
+    padding-top: 70px;
+}
+
+header section a[href="boletim.html"] {
+    border: solid thin #c0262c;
+    padding: 6px;
+    border-radius: 10px;
+    color: #c0262c;
+    text-decoration: none;
+    font-variant: all-small-caps;
+    font-style: normal;
+    font-size: 1em;
+}
+
+header section p {
+    color: #999;
+    margin: 30px auto 10px;
+    font-style: normal;
+}
+
+header section figure {
+    width: 100%;
+    margin: 0px;
+}
+
+header section figure a {
+    padding: 25px 5px 0 0;
+    border: none;
+}
+
+header section figure a:first-child {
+    padding: 25px 5px 0 0;
+    border: none;
+}
+
+header section figure a:last-child {
+    padding: 25px 0px 0 5px;
+}
+
+nav {
+    background-color: #000;
+    overflow: auto;
+    clear: both;
+    margin-top: 10px;
+    font-family: Roboto Extrabold;   
+}
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 1px;
+}
+nav ul li{
+    float: left;
+    margin: 0 auto 0 auto;
+    width: 200px;
+    text-align: center;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1,2em;
+    padding: 5px 50px;
+    line-height: 2em;
+}
+nav ul li a:hover {
+    background-color: #c0262c;
+    display: block;  
+}
+/* estrutura da pagina inicial*/
+#inicio aside{
+    width: 230px;
+    float: left;
+    margin-top: 30px;
+}
+#inicio main{
+    width: 490px;
+    float: left;
+    margin: 30px 25px 10px;
+}
+/*rodape*/
+footer{
+    clear: both;
+    border:10px solid #c0262c;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    margin: 0px;
+    float: left;
+    width: 200px;
+    padding: 0 60px;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
 }
