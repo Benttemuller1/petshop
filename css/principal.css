@@ -287,6 +287,7 @@ hr {
     font-family: Roboto Extrabold;
     padding: 10px 0 10px 30px;
 }
+
 #curiosidades header #anuncio {
     width: 510px;
     float: left;
@@ -339,34 +340,38 @@ hr {
     overflow: auto;
     clear: both;
     margin-top: 10px;
-    font-family: Roboto Extrabold;   
+    font-family: Roboto Extrabold;
 }
-#curiosidades nav ul{
+
+#curiosidades nav ul {
     list-style: none;
     padding-left: 0px;
     margin-top: 1px;
 }
-#curiosidades nav ul li{
+
+#curiosidades nav ul li {
     float: left;
     margin: 0 auto 0 auto;
     width: 200px;
     text-align: center;
-      list-style: none;
+    list-style: none;
 }
+
 #curiosidades nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1,2em;
+    font-size: 1, 2em;
     padding: 5px 50px;
     line-height: 2em;
-  
+
 }
+
 #curiosidades nav ul li a:hover {
     background-color: #c0262c;
     display: block;
     text-decoration: none;
     color: white;
-   
+
 }
 
 /* pagina de produtos*/
@@ -637,57 +642,145 @@ nav {
     overflow: auto;
     clear: both;
     margin-top: 10px;
-    font-family: Roboto Extrabold;   
+    font-family: Roboto Extrabold;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     padding-left: 0px;
     margin-top: 1px;
 }
-nav ul li{
+
+nav ul li {
     float: left;
     margin: 0 auto 0 auto;
     width: 200px;
     text-align: center;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1,2em;
+    font-size: 1, 2em;
     padding: 5px 50px;
     line-height: 2em;
 }
+
 nav ul li a:hover {
     background-color: #c0262c;
-    display: block;  
+    display: block;
 }
+
 /* estrutura da pagina inicial*/
-#inicio aside{
+#inicio aside {
     width: 230px;
     float: left;
     margin-top: 30px;
 }
-#inicio main{
+
+#inicio main {
     width: 490px;
     float: left;
     margin: 30px 25px 10px;
 }
+
 /*rodape*/
-footer{
+footer {
     clear: both;
-    border:10px solid #c0262c;
+    border: 10px solid #c0262c;
     background-color: #000;
     color: white;
     text-align: center;
     padding: 10px;
+    position: relative;
+    margin-bottom: 50px;
 }
-footer p{
-    margin: 0px;
+
+footer p {
+    margin: -10px;
     float: left;
     width: 200px;
     padding: 0 60px;
+
+    
 }
-footer p a{
-    color: white;
+
+footer p a {
+    color:white;
     text-decoration: none;
+
+    
+}
+#sistema{
+    position: absolute; 
+    background-color: white;
+    width: 35px;
+    right: 15px;
+    top: -6px;
+    border: #c0262c solid 1px;
+    border-radius: 100px;
+    margin: -3px;
+}
+/*pagina obrigado*/
+#obrigado main p img {
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    border: #c0262c solid thin;
+    color: white;
+}
+#destaqueobrigado{
+    position: relative;
+    border: #c0262c solid 1px;
+    border-radius: 0 25px;
+    padding: 5px 25px;
+    margin: 20px 0;
+    height: 265px;
+}
+#obrigado #lacinho{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    transform: rotate(30deg);
+}
+/*animaçoes da index*/
+.anuncioanime{
+    margin: 0 0 10px;
+    padding: 0;
+    overflow: auto;
+}
+.anuncioanime .boxanuncio{
+width: 163px;
+height: 230px;
+border-bottom: #c0262c thin solid;
+float: left;
+position: relative;
+overflow: hidden;
+}
+.anuncioanime .boxanuncio p{
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1,3em;
+    background-color: rgba(255,255,255,1);
+    border-left: #c0262c solid thin;
+    border-right:#c0262c thin solid;
+    margin: 0 ;
+    padding: 7px 15px;
+    position: absolute;
+    bottom: -80px;left: 0;
+    transition: linear 1s 0.1s;
+     cursor:"defaut";
+
+}
+.anuncioanime .boxanuncio p::first-line{
+    font-size: 1.1em;
+    font-variant: inherit;
+    font-style:normal;
+    font-weight: bolder;
+    color: #c0262c;
+    padding: 0;
+}
+.anuncioanime .boxanuncio p:hover{
+    background-color:rgba(255, 255, 255,0.7);
+    bottom:0;
 }
